@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Battle page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Google Fonts -->
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="assets/js/components/notifications/notifications.js"></script>
+        <script src="assets/js/components/notifications/notifications.min.js"></script>
+       
+        <script>
+          WebFont.load({
+            google: {"families":["Montserrat:400,500,600,700","Noto+Sans:400,700"]},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+          });
+        </script>
+        <link rel="stylesheet" href="style.css">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="nan.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="nan.svg">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="vendors/css/base/bootstrap.min.css">
+        <link rel="stylesheet" href="vendors/css/base/elisyam-1.5.min.css">
+        <link rel="stylesheet" href="assets/css/animate/animate.css">
+       
+        <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+    
+    <body class="bg-white" id="canvas-basic">
+        <!-- Begin Preloader -->
+        <div id="preloader">
+            <div class="canvas" id="canvas">
+                <img src="nan.svg" alt="logo" class="loader-logo">
+                <!--<div class="spinner"></div>   -->
+            </div>
+        </div>
+        <!-- End Preloader -->
+        <!-- Begin Container -->
+       
+
+
+<!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+
+        <div class="container-fluid no-padding h-100" id="canvas-basic">
+            <div class="row flex-row h-100 bg-white" id="background">
+                <!-- Begin Left Content -->
+                
+                <div class="col-xl-3 col-lg-5 col-md-5 col-sm-12 col-12 no-padding">
+                    <div class="elisyam-bg background-03">
+                        <div class="elisyam-overlay overlay-08"></div>
+                        <div class="authentication-col-content-2 mx-auto text-center">
+                            <div class="logo-centered">
+                                <a href="db-default.html">
+                                    <img src="nan.svg" alt="logo">
+                                </a>
+                            </div>
+                            <h1>Etes-Vous Prêt Pour La battle?</h1>
+                            <h3 class="description">
+                                Confrontez vous aux meilleures de NaN 
+                            </h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- End Left Content -->
+                <!-- Begin Right Content -->
+               
+                <div class="col-xl-9 col-lg-7 col-md-7 col-sm-12 col-12 my-auto no-padding">
+                    <!-- Begin Form -->
+                    <div class="authentication-form-2 mx-auto">
+                        <div class="tab-content" id="animate-tab-content">
+                            <!-- Begin Sign In -->
+                            <div role="tabpanel" class="tab-pane show active" id="singin" aria-labelledby="singin-tab">
+                                <h1 style="text-align:center; font-size: 60px; margin-bottom: 100px;">Réservez ici</h3>
+                                <form id="formulaire">
+                                    <div class="group material-input">
+        							    <input type="text" required>
+        							    <span class="highlight"></span>
+        							    <span class="bar"></span>
+        							    <label>Entrez votre Email</label>
+                                    </div>
+                                    <div class="form-group row mb-5">
+                                            
+                                             <div class="custom-control custom-radio styled-radio mb-3">
+                                                    <input class="custom-control-input" type="radio" name="options" id="opt-01" required="">
+                                                    <label class="custom-control-descfeedback" for="opt-01">9H-10H (0 Inscrits)</label>
+                                               <div class="col-lg-4">
+                                                    <div class="invalid-feedback">
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="custom-control custom-radio styled-radio mb-3">
+                                                    <input class="custom-control-input" type="radio" name="options" id="opt-02" required="">
+                                                    <label class="custom-control-descfeedback" for="opt-02">10H-11H (0 Inscrits)</label>
+                                                    <div class="invalid-feedback">
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                    <div class="custom-control custom-radio styled-radio mb-3">
+                                                        <input class="custom-control-input" type="radio" name="options" id="opt-03" required="">
+                                                        <label class="custom-control-descfeedback" for="opt-03">11H-12H (0 Inscrits)</label>
+                                                        <div class="invalid-feedback">
+                                                          
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                        </div>
+                                        <div class="sign-btn text-center">
+                                            <button  type="button" id="submit"  class="btn btn-lg btn-gradient-01 submit">
+                                              valider
+                                            </button>
+                                        </div> 
+                                        </div>
+                                        
+                                            
+                                </form>
+                                <p id="p2" >Ce mail est déjà programmé pour 
+                                    9H-10H <br>
+                                    Merci de prendre vos disposition afin de participer à la battle.</p>
+                            </div>
+                            <!-- End Sign In -->
+                            <!-- Begin Sign Up -->
+                           
+                            </div>
+                            <!-- End Sign Up -->
+                        </div>
+                    </div>
+                    <!-- End Form -->                        
+                </div>
+                
+                <!-- End Right Content -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <canvas class="canvas"></canvas>
+    
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="dist/jquery.particles.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.canvas').particles({
+          connectParticles: true,
+          color: '#000000',
+          size: 3,
+          maxParticles: 80,
+          speed: 1.8
+        });
+      });
+    </script>
+        <script>
+           $(document).ready(function(){
+               $("#p2").hide();
+    $(".submit").click(function(){
+
+            $("#formulaire").slideUp(3000);
+            $("#p2").toggle('slide', 'up', 3000);
+        });
+     
+
+  });      </script>
+  
+        <!-- End Container -->    
+        <!-- Begin Vendor Js -->
+        <script src="assets/vendors/js/base/jquery.min.js"></script>
+        <script src="assets/vendors/js/base/core.min.js"></script>
+        <!-- End Vendor Js -->
+        <!-- Begin Page Vendor Js -->
+        <script src="assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+        <script src="assets/vendors/js/noty/noty.min.js"></script>
+        <script src="assets/vendors/js/app/app.min.js"></script>
+        <!-- End Page Vendor Js -->
+        <!-- Begin Page Snippets -->
+        <script src="assets/js/components/notifications/notifications.js"></script>
+        <!-- End Page Snippets -->
+
+        
+    </body>
+</html>

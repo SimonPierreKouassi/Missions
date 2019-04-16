@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>formulaire</title>
+</head>
+<body>
+    <div id="loading">
+        <img src="nan.svg" style="width: 140px;" alt="">
+    </div>
+        <div class="container-fluid no-padding h-100" id="body">
+            <div class="row flex-row h-100">
+                <div class="col-xl-3 col-lg-5 col-md-5 col-sm-12 no-padding" style="margin: 0">
+                    <div style="background: linear-gradient(135deg,rgba(46,52,81,.85) 0%,rgba(46,52,81,.85) 100%);;height: 100VH;" class="mx-auto center">
+                        <div class="authentication-col-content-2 mx-auto text-center">
+                            <div class="logo-centered">
+                                <a href="db-default.html">
+                                    <img src="nan.svg" class="img-fluid" style="width:140px; margin-top: 100px; " alt="logo">
+                                </a>
+                            </div">
+                            <h1 style="color: white;     margin-top: 60px; margin-bottom: 30px; color: #fff;  font-weight: 600; padding: 10px">
+                            Etes vous prêt pour la Battle?</h1>
+                            <span  style="color: white; margin-top: 30px; padding: 10px" >
+                               Confrontez aux Meilleurs de NaN et elévez votre niveau
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <span style="position: absolute; bottom: 0; margin-left: 30%; color: white"> @Simon Kouassi</span>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-7 col-md-7 col-sm-12 col-12 my-auto no-padding" style="
+                display: flex;
+                flex-direction: column;
+            
+           
+                padding: 0!important;
+            
+            
+                margin-bottom: auto!important;">
+                <!-- Begin Form -->
+                <div class="authentication-form-2 mx-auto" style="width: 50%;
+                display: block;
+           
+           
+                margin-left: auto!important;
+         
+                margin-right: auto!important;
+         
+                box-sizing: border-box;
+            ">
+                    <div class="tab-content" id="animate-tab-content">
+                        <!-- Begin Sign In -->
+                        <div role="tabpanel" class="tab-pane show active" id="singin" aria-labelledby="singin-tab">
+                            <h3 style="font-size: 50px; text-align: center; margin-bottom: 100px; font-weight: bold">Réservez ici</h3>
+                            <form id="formulaire">
+                                <div class="group material-input" style="position: relative;
+                                margin-bottom: 30px;
+                           
+                                box-sizing: border-box;
+                            ">
+                                    <input placeholder="Email" type="text" required="" style="font-size: 1rem;
+                                    padding: 10px 10px 10px 5px;
+                                    display: block;
+                                    width: 100%;
+                                    border: none;
+                                    border-bottom: 1px solid #e4e8f0;
+                           
+                                    outline: none!important;
+                                
+                                    overflow: visible;">
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label style="font-size: 14px; margin-left: 40%; margin-top: 8px;  background-color: rgb(16, 231, 16); padding: 3px; border-radius: 3px;">Autoriser Battle</label>
+                                </div>
+                                <div class="form-group row mb-5" >
+                                    <div class="col-lg-4">
+                                            <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="btn01" name="options">
+                                                    <label class="custom-control-label" for="btn01">09H-10H (0 Inscrits)</label>
+                                                  </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                            <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="btn02" name="options">
+                                                    <label class="custom-control-label" for="btn02">10H-11H (0 Inscrits)</label>
+                                                  </div> 
+                                    </div>
+                                    <div class="col-lg-4">
+                                            <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="btn03" name="options">
+                                                    <label class="custom-control-label" for="btn03">10H-11H (0 Inscrits)</label>
+                                                  </div> 
+                                    </div>
+                               </div>
+                               <div class="sign-btn text-center">
+                                    <button class="btn btn-primary" id="submit">Valider</button>
+                                </div>
+                            </form>
+                            <p id="p2" >Ce mail est déjà programmé pour 
+                                    9H-10H <br>
+                                    Merci de prendre vos dispositions afin de participer à la battle.</p>
+                            </div>
+                           
+                           
+                        </div>
+                      
+                    </div>
+                </div>
+                
+                <!-- End Form -->                        
+            </div>
+            
+        </div>
+        
+        <script>
+            $(document).ready(() => {
+                $("#body").hide();
+                $("#p2").hide();
+                $("#submit").click(function(){
+                $("#formulaire").slideUp(3000);
+                    $("#p2").show();
+                    
+            });
+            });
+            
+        setTimeout(function(){
+            document.getElementById("loading").style.display = 'none';
+            $("#body").fadeIn('slow');
+        },2000)
+        
+        </script>
+    
+</body>
+</html>
